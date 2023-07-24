@@ -1,0 +1,141 @@
+.header {
+  background-color: #0082D1;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+
+.userContainer {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 4px;
+  width: 25px;
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  justify-content: space-between;
+}
+
+.nickname {
+  color: lightyellow;
+}
+
+.logo {
+  text-align: left;
+}
+
+.logo a {
+  color: lightyellow;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.navLinks {
+  display: flex;
+  padding: 0 0.7vw;
+  align-items: center;
+  text-transform: uppercase;
+  list-style: none;
+  font-weight: 600;
+}
+
+.navLinks li a {
+  margin: 0 0.7vw;
+  text-decoration: none;
+  transition: all ease-in-out 350ms;
+  padding: 10px;
+  color: #FFD100;
+}
+
+.navLinks li a:hover {
+  color: #000;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.navLinks li {
+  position: relative;
+}
+
+.navLinks li a:hover::before {
+  width: 80%;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background: #f2f5f7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+  nav {
+    position: relative;
+    z-index: 15;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 15;
+    transition: all 0.6s ease3
+  }
+
+  .navLinks {
+    position: fixed;
+    justify-content: center;
+    left: -100%;
+    top: 0;
+    opacity: 1;
+    height: 100vh;
+    width: 80%;
+    flex-direction: column;
+    transition: all 0.6s ease-out;
+    pointer-events: none;
+    background: #112d49;
+  }
+
+  .navLinks li {
+    margin: 5vw 0;
+  }
+
+  .navLinks.open {
+    left: 0;
+    pointer-events: all;
+    z-index: 10;
+  }
+
+  /* Navigation Bar Icon on Click*/
+
+  .toggle .bars1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .bars2 {
+    transition: all 0s ease;
+    width: 0;
+  }
+
+  .toggle .bars3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+}

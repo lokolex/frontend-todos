@@ -1,0 +1,29 @@
+.title {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.img {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.link {
+  margin-top: 15px;
+}
+
+.link a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.link a:hover {
+  color: blue
+}

@@ -1,0 +1,15 @@
+.info {
+  font-size: 1.5rem;
+  color: lightyellow;
+  margin-bottom: 15px;
+}
+
+.img {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.img img {
+  width: 100%;
+  object-fit: cover;
+}
